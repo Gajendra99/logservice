@@ -65,7 +65,7 @@ class LogService {
 
       for (String logEntry in logEntries) {
         // Assuming the log format is: DateTime; LogLevel; LogTitle; LogMessage
-        List<String> parts = logEntry.split('\t');
+        List<String> parts = logEntry.split(';');
 
         if (parts.length < 4) continue; // Skip if log format is incorrect
 

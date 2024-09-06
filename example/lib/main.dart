@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
     logService.initLogFile();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'LogService',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(
-        title: 'Flutter Demo Home Page',
+        title: 'Log Service',
         logService: logService,
       ),
     );
