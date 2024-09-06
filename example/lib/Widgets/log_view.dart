@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:logservice/Models/log_data.dart';
-import 'package:logservice/logservice.dart';
+import 'package:flutter_log_service/Models/log_data.dart';
+import 'package:flutter_log_service/logservice.dart';
 import 'package:intl/intl.dart';
 
 class LogsView extends StatefulWidget {

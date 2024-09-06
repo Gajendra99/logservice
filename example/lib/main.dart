@@ -1,7 +1,7 @@
 import 'package:example/Widgets/log_view.dart';
 import 'package:flutter/material.dart';
-import 'package:logservice/Models/log_status.dart';
-import 'package:logservice/logservice.dart';
+import 'package:flutter_log_service/Models/log_status.dart';
+import 'package:flutter_log_service/logservice.dart';
 
 void main() {
   runApp(MyApp());

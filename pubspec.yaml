@@ -1,8 +1,8 @@
-name: logservice
-description: A new Flutter package project.
+name: flutter_log_service
+description: LogService is a simple Dart-based logging utility that allows you to log messages, errors, and warnings to a text file.
 version: 1.0.0
 homepage: https://github.com/Gajendra99/logservice.git
-publish_to: 'https://pub.dev'
+
 
 environment:
   sdk: '>=2.18.6 <3.0.0'

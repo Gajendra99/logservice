@@ -2,7 +2,7 @@
 
 ## Usage
 
-To use this package, add <b>logservice</b> as a dependency in your pubspec.yaml file.
+To use this package, add <b>flutter_log_service</b> as a dependency in your pubspec.yaml file.
 
 ## Features
 
@@ -25,13 +25,13 @@ Follow this steps to use this package
 ## Install
 
 ```html
-logservice: ^1.0.0
+flutter_log_service: ^1.0.0
 ```
 
 ## How To Use
 <b>Import Package</b>
 ```dart
-import 'logservice/logservice.dart';
+import 'flutter_log_service/logservice.dart';
 ```
 
 <b>Initialize LogService Class</b>

@@ -1,10 +1,11 @@
 library logservice;
 
 import 'dart:io';
-import 'package:logservice/Models/log_data.dart';
-import 'package:logservice/Models/log_status.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
+
+import 'Models/log_data.dart';
+import 'Models/log_status.dart';
 
 enum LogLevel { INFO, WARNING, ERROR }
 
