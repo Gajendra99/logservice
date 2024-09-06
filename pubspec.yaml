@@ -1,7 +1,8 @@
 name: logservice
 description: A new Flutter package project.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/Gajendra99/logservice.git
+publish_to: 'https://pub.dev'
 
 environment:
   sdk: '>=2.18.6 <3.0.0'
@@ -10,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  path_provider: any
-  share_plus: any
-  intl: any
+  path_provider: ^2.1.0
+  share_plus: ^7.2.2
+  intl: ^0.18.1
 
 dev_dependencies:
   flutter_test:

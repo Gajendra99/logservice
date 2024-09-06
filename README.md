@@ -1,39 +1,96 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+<b>LogService</b> is a simple Dart-based logging utility that allows you to log messages, errors, and warnings to a text file. It also enables users to share the log file for troubleshooting purposes. This library is designed for Flutter apps and works well on Android (will be on iOS soon).
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+To use this package, add <b>logservice</b> as a dependency in your pubspec.yaml file.
 
-```dart
-const like = 'sample';
+## Features
+
+<ul>
+<li><b>Save Log Error to File</b>
+</li>
+<li><b>Share Log file easily</b>
+</li>
+<li><b>View Saved Logs</b>
+</li>
+<li><b>View Filtered Logs based on Date & Log Level</b>
+</li>
+</ul>
+<hr>
+
+## Getting started
+
+Follow this steps to use this package
+
+## Install
+
+```html
+logservice: ^1.0.0
 ```
 
-## Additional information
+## How To Use
+<b>Import Package</b>
+```dart
+import 'logservice/logservice.dart';
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+<b>Initialize LogService Class</b>
+```dart 
+LogService logService = LogService();
+```
+<b>now call logService.initLogFile() to create file and access it.</b>
+
+```dart
+logService.initLogFile();
+```
+
+<b>When any error occurs call this</b>
+
+```dart
+LogStatus status = await widget.logService.setLog(
+          errorTitle: "Error Title",
+          errorMessage: "Error Message",
+          level: LogLevel.WARNING);
+```
+<B>Get Filtered Logs</B>
+```dart
+LogData data = await logService.getFilteredLogs(
+      logLevel: LogLevel.WARNING,
+      startDate: DateTime(2023, 8, 1),
+      endDate: DateTime.now(),
+    );
+
+```
+<b>Share Log File</b>
+```dart
+await logService.shareLog();
+```
+
+
+
+
+<hr>
+## Future Updates
+<ul>
+<li><b>Save log file to customized location</b>
+</li>
+<li><b>Set max file size</b>
+</li>
+<li><b>Delete log after specific days limit</b>
+</li>
+<li><b>View Filtered Logs based on Date & Log Level</b>
+</li>
+<li><b>Save customized log (with extra details)</b>
+</li>
+</ul>
+<hr>
+
+
+## Developer
+
+<H3>Gajendra Somawat</H3>
+<p>Instagram: <a href="https://www.instagram.com/gajendra_menaria9">gajendra_menaria9</a></p>
+
+## Additional Details
+
+for more details visit example page or contact on <a href="https://www.instagram.com/gajendra_menaria9">Instagram</a>
