@@ -3,3 +3,7 @@
 * Save error logs to file
 * Share log file
 * View saved logs
+
+## 1.0.1
+
+* No Updates

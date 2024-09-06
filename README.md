@@ -25,7 +25,7 @@ Follow this steps to use this package
 ## Install
 
 ```html
-flutter_log_service: ^1.0.0
+flutter_log_service: ^1.0.1
 ```
 
 ## How To Use
@@ -70,6 +70,8 @@ await logService.shareLog();
 
 
 <hr>
+
+
 ## Future Updates
 <ul>
 <li><b>Save log file to customized location</b>
