@@ -1,4 +1,4 @@
-library logservice;
+library flutterlogservice;
 
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
@@ -9,7 +9,7 @@ import 'Models/log_status.dart';
 
 enum LogLevel { INFO, WARNING, ERROR }
 
-class LogService {
+class FlutterLogService {
   File? logFile;
 
   // Initialize the log file

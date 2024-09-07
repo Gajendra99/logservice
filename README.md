@@ -25,18 +25,18 @@ Follow this steps to use this package
 ## Install
 
 ```html
-flutter_log_service: ^1.0.1
+flutter_log_service: ^1.0.2
 ```
 
 ## How To Use
 <b>Import Package</b>
 ```dart
-import 'flutter_log_service/logservice.dart';
+import 'flutter_log_service/flutter_log_service.dart';
 ```
 
-<b>Initialize LogService Class</b>
+<b>Initialize FlutterLogService Class</b>
 ```dart 
-LogService logService = LogService();
+FlutterLogService logService = FlutterLogService();
 ```
 <b>now call logService.initLogFile() to create file and access it.</b>
 
@@ -47,7 +47,7 @@ logService.initLogFile();
 <b>When any error occurs call this</b>
 
 ```dart
-LogStatus status = await widget.logService.setLog(
+LogStatus status = await logService.setLog(
           errorTitle: "Error Title",
           errorMessage: "Error Message",
           level: LogLevel.WARNING);
@@ -65,9 +65,6 @@ LogData data = await logService.getFilteredLogs(
 ```dart
 await logService.shareLog();
 ```
-
-
-
 
 <hr>
 

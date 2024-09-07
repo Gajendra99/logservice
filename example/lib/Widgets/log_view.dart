@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_log_service/Models/log_data.dart';
-import 'package:flutter_log_service/logservice.dart';
+import 'package:flutter_log_service/flutter_log_service.dart';
 import 'package:intl/intl.dart';
 
 class LogsView extends StatefulWidget {
-  final LogService logService;
+  final FlutterLogService logService;
   const LogsView({Key? key, required this.logService}) : super(key: key);
 
   @override
@@ -20,7 +20,7 @@ class _LogsViewState extends State<LogsView> {
     // Fetch logs initially when screen is built
     _futureLogs = widget.logService.getFilteredLogs(
       logLevel: null,
-      startDate: DateTime(2023, 8, 1),
+      startDate: DateTime.now().subtract(Duration(hours: 4)),
       endDate: DateTime.now(),
     );
   }

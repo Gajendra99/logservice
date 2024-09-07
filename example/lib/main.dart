@@ -1,7 +1,7 @@
 import 'package:example/Widgets/log_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_log_service/Models/log_status.dart';
-import 'package:flutter_log_service/logservice.dart';
+import 'package:flutter_log_service/flutter_log_service.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,7 +9,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
-  LogService logService = LogService();
+  FlutterLogService logService = FlutterLogService();
 
   // This widget is the root of your application.
   @override
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title, required this.logService});
-  final LogService logService;
+  final FlutterLogService logService;
   final String title;
 
   @override
